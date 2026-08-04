@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:background="@drawable/img11"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:id="@+id/Wlcm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="WELCOME"
+            android:layout_marginTop="50dp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textSize="50sp"
+            android:textColor="#170B7F" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="220dp"
+            android:layout_height="161dp"
+            android:layout_marginTop="40dp"
+            app:srcCompat="@drawable/img12" />
+
+        <EditText
+            android:id="@+id/inputMessage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="80dp"
+            android:hint="Enter Message: "
+            android:inputType="textMultiLine"
+            android:gravity="top"
+            android:padding="12dp"
+            android:textSize="30sp"
+            android:textColor="#170B7F"
+            android:textColorHint="#170B7F"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="8dp" />
+
+        <EditText
+            android:id="@+id/inputKey"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="80dp"
+            android:hint="Enter Key: "
+            android:inputType="number"
+            android:gravity="top"
+            android:textColor="#170B7F"
+            android:textColorHint="#170B7F"
+            android:padding="12dp"
+            android:textSize="30sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="60dp"
+            android:layout_marginBottom="12dp">
+
+            <Button
+                android:id="@+id/encryptButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Encrypt"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:backgroundTint="#170B7F" />
+
+            <Button
+                android:id="@+id/decryptButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Decrypt"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:backgroundTint="#170B7F"
+                android:layout_marginStart="12dp" />
+
+            <Button
+                android:id="@+id/copyButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Copy"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:backgroundTint="#170B7F"
+                android:layout_marginStart="12dp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/resultLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="RESULT:"
+            android:layout_marginTop="25dp"
+            android:textSize="40sp"
+            android:textStyle="bold"
+            android:textColor="#170B7F"
+            android:gravity="center"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="4dp" />
+
+        <TextView
+            android:id="@+id/outputText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="30sp"
+            android:layout_marginTop="2.5dp"
+            android:padding="12dp"
+            android:gravity="center"
+            android:textColor="#000000"
+            android:minHeight="80dp" />
+    </LinearLayout>
+</ScrollView>
