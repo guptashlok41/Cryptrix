@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="10dp"
-    android:background="@drawable/img11"
+    android:background="#F5F7FA"
     android:fillViewport="true">
 
     <LinearLayout
@@ -18,47 +18,64 @@
             android:id="@+id/Wlcm"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="WELCOME"
-            android:layout_marginTop="50dp"
+            android:text="Cryptrix"
+            android:layout_marginTop="18dp"
             android:textStyle="bold"
             android:gravity="center"
-            android:textSize="50sp"
-            android:textColor="#170B7F" />
+            android:textSize="34sp"
+            android:textColor="#1E3A8A" />
+
+        <TextView
+            android:id="@+id/subTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Secure Message Encryption"
+            android:textSize="16sp"
+            android:textColor="#6B7280"
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="20dp"
+            android:gravity="center"/>
 
         <ImageView
             android:id="@+id/imageView"
-            android:layout_width="220dp"
-            android:layout_height="161dp"
-            android:layout_marginTop="40dp"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
             app:srcCompat="@drawable/img12" />
 
-        <EditText
-            android:id="@+id/inputMessage"
+        <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:minHeight="80dp"
-            android:hint="Enter Message: "
-            android:inputType="textMultiLine"
-            android:gravity="top"
-            android:padding="12dp"
-            android:textSize="30sp"
-            android:textColor="#170B7F"
-            android:textColorHint="#170B7F"
             android:layout_marginTop="20dp"
-            android:layout_marginBottom="8dp" />
+            android:hint="Enter your message"
+            style="@style/Widget.Material3.TextInputLayout.OutlinedBox">
 
-        <EditText
-            android:id="@+id/inputKey"
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/inputMessage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textMultiLine"
+                android:minLines="3"
+                android:maxLines="5"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:minHeight="80dp"
-            android:hint="Enter Key: "
-            android:inputType="number"
-            android:gravity="top"
-            android:textColor="#170B7F"
-            android:textColorHint="#170B7F"
-            android:padding="12dp"
-            android:textSize="30sp" />
+            android:layout_marginTop="16dp"
+            android:hint="Enter password"
+            app:endIconMode="password_toggle"
+            style="@style/Widget.Material3.TextInputLayout.OutlinedBox">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/inputKey"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -70,57 +87,87 @@
 
             <Button
                 android:id="@+id/encryptButton"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
                 android:text="Encrypt"
                 android:textColor="@color/white"
                 android:textSize="20sp"
-                android:backgroundTint="#170B7F" />
+                android:layout_width="0dp"
+                android:layout_height="56dp"
+                android:layout_weight="1"
+                android:layout_marginHorizontal="6dp"
+                android:textAllCaps="false"
+                android:textStyle="bold"
+                android:backgroundTint="#1E3A8A" />
 
             <Button
                 android:id="@+id/decryptButton"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
                 android:text="Decrypt"
                 android:textColor="@color/white"
                 android:textSize="20sp"
-                android:backgroundTint="#170B7F"
-                android:layout_marginStart="12dp" />
+                android:layout_marginStart="12dp"
+                android:layout_width="0dp"
+                android:layout_height="56dp"
+                android:layout_weight="1"
+                android:layout_marginHorizontal="6dp"
+                android:textAllCaps="false"
+                android:textStyle="bold"
+                android:backgroundTint="#1E3A8A" />
 
             <Button
                 android:id="@+id/copyButton"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
                 android:text="Copy"
                 android:textColor="@color/white"
                 android:textSize="20sp"
-                android:backgroundTint="#170B7F"
-                android:layout_marginStart="12dp" />
+                android:layout_marginStart="12dp"
+                android:layout_width="0dp"
+                android:layout_height="56dp"
+                android:layout_weight="1"
+                android:layout_marginHorizontal="6dp"
+                android:textAllCaps="false"
+                android:textStyle="bold"
+                android:backgroundTint="#1E3A8A" />
         </LinearLayout>
 
-        <TextView
-            android:id="@+id/resultLabel"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="RESULT:"
-            android:layout_marginTop="25dp"
-            android:textSize="40sp"
-            android:textStyle="bold"
-            android:textColor="#170B7F"
-            android:gravity="center"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginBottom="4dp" />
-
-        <TextView
-            android:id="@+id/outputText"
+        <com.google.android.material.card.MaterialCardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text=""
-            android:textSize="30sp"
-            android:layout_marginTop="2.5dp"
-            android:padding="12dp"
-            android:gravity="center"
-            android:textColor="#000000"
-            android:minHeight="80dp" />
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="20dp"
+            app:cardCornerRadius="18dp"
+            app:cardElevation="6dp"
+            app:strokeColor="#DADADA"
+            app:strokeWidth="1dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="18dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="🔒 Encrypted / Decrypted Text"
+                    android:textStyle="bold"
+                    android:gravity="start"
+                    android:textAlignment="viewStart"
+                    android:fontFamily="monospace"
+                    android:textSize="18sp"
+                    android:textColor="#1E3A8A"/>
+
+                <TextView
+                    android:id="@+id/outputText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:minHeight="80dp"
+                    android:text="Encrypted text will appear here"
+                    android:padding="12dp"
+                    android:textColor="#333333"
+                    android:textSize="16sp"
+                    android:textIsSelectable="true"/>
+
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
     </LinearLayout>
 </ScrollView>
