@@ -9,6 +9,7 @@ import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.shlok.cryptrix.crypto.CryptoManager
 import com.google.android.material.snackbar.Snackbar
+import android.content.Intent
 
 
 class MainActivity : AppCompatActivity() {
@@ -24,6 +25,7 @@ class MainActivity : AppCompatActivity() {
         val encryptButton = findViewById<Button>(R.id.encryptButton)
         val decryptButton = findViewById<Button>(R.id.decryptButton)
         val copyButton = findViewById<Button>(R.id.copyButton)
+        val shareButton = findViewById<Button>(R.id.shareButton)
 
         encryptButton.setOnClickListener {
             val msg = inputMessage.text.toString()
@@ -69,6 +71,27 @@ class MainActivity : AppCompatActivity() {
             val clip = ClipData.newPlainText("text", outputText.text)
             clipboard.setPrimaryClip(clip)
             Snackbar.make(findViewById(android.R.id.content),"Copied to clipboard \uD83D\uDCCB",Snackbar.LENGTH_SHORT).show()
+        }
+
+        shareButton.setOnClickListener {
+
+            val text = outputText.text.toString()
+
+            if (text.isBlank() || text == "Encrypted text will appear here") {
+                Snackbar.make(
+                    findViewById(android.R.id.content),
+                    "Nothing to share",
+                    Snackbar.LENGTH_SHORT
+                ).show()
+                return@setOnClickListener
+            }
+
+            val intent = Intent(Intent.ACTION_SEND).apply {
+                type = "text/plain"
+                putExtra(Intent.EXTRA_TEXT, text)
+            }
+
+            startActivity(Intent.createChooser(intent, "Share Encrypted Text"))
         }
     }
 
