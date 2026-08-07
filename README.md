@@ -1,66 +1,130 @@
 # 🔐 Cryptrix
 
-A secure Android application built with Kotlin that encrypts and decrypts messages using AES-256 GCM encryption with password-based key derivation (PBKDF2-HMAC-SHA256).
+Secure Message Encryption Android App built using **Kotlin** and **AES-256 Encryption**.
 
-## 📱 Screenshots
-
-(Home Screen Image)
+Cryptrix allows users to securely encrypt and decrypt messages using a password. The encryption key is derived using **PBKDF2WithHmacSHA256**, while **AES-GCM** provides authenticated encryption with random Salt and IV for every message.
 
 ---
 
 ## ✨ Features
 
-- 🔐 AES-256 GCM Encryption
-- 🔑 Password-based Encryption
-- 🧂 Random Salt Generation
+- 🔒 AES-256 Encryption
+- 🛡️ AES-GCM Authenticated Encryption
+- 🔑 PBKDF2-HMAC-SHA256 Key Derivation
+- 🎲 Random Salt Generation
 - 🎲 Random IV Generation
 - 📋 Copy Encrypted Text
 - 📤 Share Encrypted Text
-- 👁 Password Visibility Toggle
-- ✅ Snackbar Validation
-- 🎨 Material Design UI
+- 👁️ Password Visibility Toggle
+- ✅ Material Design UI
+- ⚡ Snackbar Feedback Messages
 
 ---
 
-## 🛠 Tech Stack
+## 🛠️ Tech Stack
 
 - Kotlin
 - Android SDK
+- Material Components
 - AES/GCM/NoPadding
 - PBKDF2WithHmacSHA256
-- Material Design Components
+- Android Clipboard API
+- Android Share Intent
 
 ---
 
-## 🔒 Security
+## 🔐 Security
 
-- AES-256 GCM
-- 256-bit key
-- PBKDF2 (65,536 iterations)
-- Random Salt (16 bytes)
-- Random IV (12 bytes)
-- 128-bit Authentication Tag
+Cryptrix follows modern encryption practices.
 
----
+- Encryption Algorithm: **AES-256**
+- Mode: **AES/GCM/NoPadding**
+- Key Derivation: **PBKDF2WithHmacSHA256**
+- Iterations: **65,536**
+- Salt Size: **16 Bytes**
+- IV Size: **12 Bytes**
+- Authentication Tag: **128-bit**
 
-## 🚀 How to Run
-
-1. Clone the repository
-2. Open in Android Studio
-3. Build the project
-4. Run on Emulator or Android device
+Each encryption generates a new random Salt and IV, ensuring that encrypting the same message twice produces different ciphertext.
 
 ---
 
-## 📌 Future Improvements
+## 🚀 How to Use
 
-- Dark Mode
-- Biometric Authentication
-- File Encryption
-- QR Code Sharing
+1. Enter your message.
+2. Enter a password.
+3. Tap **Encrypt**.
+4. Copy or Share the encrypted text.
+5. Paste the encrypted text back.
+6. Enter the same password.
+7. Tap **Decrypt**.
+
+---
+
+# 📱 Screenshots
+
+## 🏠 Home Screen
+
+![](screenshots/home.png)
+
+---
+
+## 🔒 Encrypt Message
+
+![](screenshots/encrypt.png)
+
+---
+
+## 🔓 Decrypt Message
+
+![](screenshots/decrypt.png)
+
+---
+
+## 📋 Copy Encrypted Text
+
+![](screenshots/copy.png)
+
+---
+
+## 📤 Share Encrypted Text
+
+![](screenshots/share.png)
+
+---
+
+## 📂 Project Structure
+
+```
+Cryptrix
+│
+├── app
+│
+├── screenshots
+│   ├── home.png
+│   ├── encrypt.png
+│   ├── decrypt.png
+│   ├── copy.png
+│   └── share.png
+│
+└── README.md
+```
+
+---
+
+## 🔮 Future Improvements
+
+- 🌙 Dark Mode
+- 📜 Encryption History
+- 📱 QR Code Sharing
+- 📂 Export Encrypted Text
+- ☁️ Cloud Backup
+- 🔐 Biometric Authentication
 
 ---
 
 ## 👨‍💻 Author
 
-Shlok Gupta
+**Shlok Gupta**
+
+If you like this project, consider giving it a ⭐ on GitHub!
