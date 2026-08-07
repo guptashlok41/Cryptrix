@@ -1,69 +1,66 @@
 # 🔐 Cryptrix
 
-Cryptrix is a secure Android message encryption application built using **Kotlin** and **AES-256 GCM**. It allows users to encrypt and decrypt messages using a password while ensuring strong security through modern cryptographic techniques.
+A secure Android application built with Kotlin that encrypts and decrypts messages using AES-256 GCM encryption with password-based key derivation (PBKDF2-HMAC-SHA256).
+
+## 📱 Screenshots
+
+(Home Screen Image)
 
 ---
 
 ## ✨ Features
 
-- 🔒 AES-256 GCM Encryption
-- 🔑 Password-based key generation using PBKDF2
-- 🧂 Random Salt generation
-- 🎲 Random IV generation
-- 📋 Copy encrypted/decrypted text
-- ⚠️ Input validation
-- ❌ Error handling for invalid passwords or ciphertext
+- 🔐 AES-256 GCM Encryption
+- 🔑 Password-based Encryption
+- 🧂 Random Salt Generation
+- 🎲 Random IV Generation
+- 📋 Copy Encrypted Text
+- 📤 Share Encrypted Text
+- 👁 Password Visibility Toggle
+- ✅ Snackbar Validation
+- 🎨 Material Design UI
 
 ---
 
 ## 🛠 Tech Stack
 
 - Kotlin
-- Android Studio
+- Android SDK
 - AES/GCM/NoPadding
 - PBKDF2WithHmacSHA256
-- SecureRandom
-- Base64 Encoding
+- Material Design Components
 
 ---
 
-## 🔐 Security
+## 🔒 Security
 
-Cryptrix follows modern encryption practices:
-
-- AES-256 GCM authenticated encryption
-- Random Salt for every encryption
-- Random IV for every encryption
-- PBKDF2-HMAC-SHA256 key derivation
-- No hardcoded encryption keys
-
----
-
-## 🚀 How to Use
-
-1. Enter your message.
-2. Enter a password.
-3. Tap **Encrypt**.
-4. Copy the encrypted text.
-5. Paste it back and use the same password to decrypt.
+- AES-256 GCM
+- 256-bit key
+- PBKDF2 (65,536 iterations)
+- Random Salt (16 bytes)
+- Random IV (12 bytes)
+- 128-bit Authentication Tag
 
 ---
 
-## 📱 Screenshots
+## 🚀 How to Run
 
-Coming Soon
-
----
-
-## 🔮 Future Improvements
-
-- Material 3 UI
-- Encryption History
-- Share Encrypted Text
-- Dark Theme Improvements
+1. Clone the repository
+2. Open in Android Studio
+3. Build the project
+4. Run on Emulator or Android device
 
 ---
 
-## 👨‍💻 Developer
+## 📌 Future Improvements
 
-**Shlok Gupta**
+- Dark Mode
+- Biometric Authentication
+- File Encryption
+- QR Code Sharing
+
+---
+
+## 👨‍💻 Author
+
+Shlok Gupta
