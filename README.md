@@ -65,14 +65,15 @@ Each encryption generates a new random Salt and IV, ensuring that encrypting the
 
 ## 🏠 Home Screen
 
-<img width="300" height="600" alt="WhatsApp Image 2026-08-07 at 3 04 29 PM" src="https://github.com/user-attachments/assets/d7a58e27-6204-44f0-b33e-010cb3c3b043" />
+<img width="300" height="500" alt="WhatsApp Image 2026-08-07 at 3 04 29 PM" src="https://github.com/user-attachments/assets/d7a58e27-6204-44f0-b33e-010cb3c3b043" />
 
 
 ---
 
 ## 🔒 Encrypt Message
 
-![](screenshots/encrypt.png)
+<img width="300" height="500" alt="WhatsApp Image 2026-08-07 at 3 05 03 PM" src="https://github.com/user-attachments/assets/4412db34-85e6-4b52-800f-b4ffdda4cb9d" />
+
 
 ---
 
