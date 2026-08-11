@@ -77,21 +77,26 @@ Each encryption generates a new random Salt and IV, ensuring that encrypting the
 
 ---
 
-## 🔓 Decrypt Message
-
-![](screenshots/decrypt.png)
-
----
-
 ## 📋 Copy Encrypted Text
 
-![](screenshots/copy.png)
+<img width="300" height="600" alt="WhatsApp Image 2026-08-07 at 3 06 48 PM" src="https://github.com/user-attachments/assets/162f09aa-e890-46c1-b353-d7f5a257245f" />
+
 
 ---
 
 ## 📤 Share Encrypted Text
 
-![](screenshots/share.png)
+<img width="300" height="600" alt="WhatsApp Image 2026-08-07 at 3 11 06 PM" src="https://github.com/user-attachments/assets/ec6cabf4-662b-48b1-bb3d-0618487affc3" />
+<img width="300" height="600" alt="WhatsApp Image 2026-08-07 at 3 11 06 PM (1)" src="https://github.com/user-attachments/assets/91782cbb-1ea4-4020-ba45-63b5efa2d0f6" />
+
+
+
+---
+
+## 🔓 Decrypt Message
+
+<img width="300" height="600" alt="WhatsApp Image 2026-08-07 at 3 08 04 PM" src="https://github.com/user-attachments/assets/18c659f0-a5d6-4b6b-88e0-92209cfcbe6d" />
+
 
 ---
 
