@@ -108,11 +108,6 @@ Cryptrix
 ├── app
 │
 ├── screenshots
-│   ├── home.png
-│   ├── encrypt.png
-│   ├── decrypt.png
-│   ├── copy.png
-│   └── share.png
 │
 └── README.md
 ```
