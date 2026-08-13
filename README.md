@@ -121,7 +121,6 @@ Cryptrix
 - 📱 QR Code Sharing
 - 📂 Export Encrypted Text
 - ☁️ Cloud Backup
-- 🔐 Biometric Authentication
 
 ---
 
